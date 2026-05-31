@@ -1,0 +1,32 @@
+# Node.js
+**/node_modules/
+**/dist/
+**/.env
+**/.env.local
+**/.env.*.local
+**/.vite/
+
+# Python
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/.pytest_cache/
+**/venv/
+**/.venv/
+**/env/
+**/ENV/
+
+# Large model files / weights (if any, though the pickle is small, we can keep it if the user wants it to work out-of-the-box, or ignore it. 343KB pickle is fine)
+# **/hallucination_classifier.pkl
+
+# IDEs & System
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
