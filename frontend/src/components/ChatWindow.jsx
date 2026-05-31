@@ -24,7 +24,8 @@ export default function ChatWindow({ config }) {
     setIsLoading(true);
 
     try {
-      const res = await fetch('http://localhost:8000/chat', {
+      const apiBase = import.meta.env.VITE_API_URL || 'https://humorist-recognize-professed.ngrok-free.dev';
+      const res = await fetch(`${apiBase}/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
